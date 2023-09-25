@@ -3,38 +3,122 @@ import Layout from "../layouts/Layout.astro";
 // import Card from "../components/Card.astro";
 ---
 
-<Layout title="Coming Soon" />
-<main class="flex w-full">
-    <div class="w-2/3 flex justify-center items-center" id="text-welcome">
-        <div>
-            <h1 class="text-white text-6xl font-bold text-left -mt-36 mb-12">
-                Capital Compass
-            </h1>
-            <h2 class="text-white text-5xl font-semibold mb-6">
-                Our Website is coming Soon!
+<Layout title="Capital Compass" />
+<main class="flex flex-wrap w-full bg-[#051F42]">
+    <div
+        class="w-full md:w-2/3 flex justify-center items-center md:h-screen h-1/2 flex-col px-2"
+        id="text-welcome"
+    >
+        <div
+            class="h-1/2 md:pt-16 w-screen bg-white flex flex-col items-center"
+        >
+            <img
+                src="/Main.jpg"
+                alt="Main Logo"
+                class="rounded-xl sm:w-1/3 md:w-1/3 md:h-2/3 h-1/3 md:object-cover md:mb-16"
+            />
+            <h2
+                class="text-slate-800 text-2xl sm:text-3xl md:text-4xl mb-2 font-bold text-center"
+            >
+                ΕΡΧΟΜΑΣΤΕ ΣΥΝΤΟΜΑ
             </h2>
-            <p class="text-white text-2xl">
-                We are working very hard to give you the best experience
+        </div>
+        <div class="flex flex-col items-center h-1/2 pb-6">
+            <p class="text-white text-2xl text-center font-bold mt-2">
+                Η ιστοσελίδα είναι υπο κατασκευή
             </p>
-            <div>
-                <a
-                    class="bg-white inline-block p-4 rounded-full"
-                    href="mailto:Marios_Dimas@outlook.com">Email</a
-                >
-                <a
-                    class="bg-white inline-block p-4 rounded-full"
-                    href="tel:6987012565">Phone</a
-                >
+            <div class="mt-10 flex justify-center mb-6">
+                <ul>
+                    <li class="mb-4">
+                        <a
+                            href="tel:+302312316971"
+                            class="flex items-center gap-3 justify-center"
+                        >
+                            <svg
+                                width="24px"
+                                height="24px"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g clip-path="url(#clip0_15_529)">
+                                    <rect width="24" height="24"></rect>
+                                    <path
+                                        d="M2.01394 6.87134C1.34749 10.0618 3.85967 13.8597 7.01471 17.0147C10.1698 20.1698 13.9676 22.682 17.1581 22.0155C19.782 21.4674 21.1215 20.0697 21.8754 18.8788C22.1355 18.4678 22.0042 17.9344 21.6143 17.6436L17.9224 14.8897C17.5243 14.5928 16.9685 14.633 16.6174 14.9842L14.6577 16.9438C14.6577 16.9438 12.7529 16.3246 10.2288 13.8006C7.70482 11.2766 7.08564 9.37175 7.08564 9.37175L9.04529 7.4121C9.39648 7.06091 9.43671 6.5052 9.13975 6.10709L6.38585 2.4151C6.09505 2.02525 5.56163 1.89395 5.15068 2.15407C3.9597 2.90794 2.56203 4.24747 2.01394 6.87134Z"
+                                        stroke="#fff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_15_529">
+                                        <rect
+                                            width="24"
+                                            height="24"
+                                            fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="text-white/90 hover:text-white"
+                                >+30 2312 316971</span
+                            >
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="mailto:info@capitalcompass.gr"
+                            class="flex items-center gap-3 justify-center"
+                        >
+                            <svg
+                                height="24px"
+                                width="24px"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 512 512"
+                                xml:space="preserve"
+                            >
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: #fff;
+                                    }
+                                </style>
+                                <g>
+                                    <path
+                                        class="st0"
+                                        d="M510.746,110.361c-2.128-10.754-6.926-20.918-13.926-29.463c-1.422-1.794-2.909-3.39-4.535-5.009
+		c-12.454-12.52-29.778-19.701-47.531-19.701H67.244c-17.951,0-34.834,7-47.539,19.708c-1.608,1.604-3.099,3.216-4.575,5.067
+		c-6.97,8.509-11.747,18.659-13.824,29.428C0.438,114.62,0,119.002,0,123.435v265.137c0,9.224,1.874,18.206,5.589,26.745
+		c3.215,7.583,8.093,14.772,14.112,20.788c1.516,1.509,3.022,2.901,4.63,4.258c12.034,9.966,27.272,15.45,42.913,15.45h377.51
+		c15.742,0,30.965-5.505,42.967-15.56c1.604-1.298,3.091-2.661,4.578-4.148c5.818-5.812,10.442-12.49,13.766-19.854l0.438-1.05
+		c3.646-8.377,5.497-17.33,5.497-26.628V123.435C512,119.06,511.578,114.649,510.746,110.361z M34.823,99.104
+		c0.951-1.392,2.165-2.821,3.714-4.382c7.689-7.685,17.886-11.914,28.706-11.914h377.51c10.915,0,21.115,4.236,28.719,11.929
+		c1.313,1.327,2.567,2.8,3.661,4.272l2.887,3.88l-201.5,175.616c-6.212,5.446-14.21,8.443-22.523,8.443
+		c-8.231,0-16.222-2.99-22.508-8.436L32.19,102.939L34.823,99.104z M26.755,390.913c-0.109-0.722-0.134-1.524-0.134-2.341V128.925
+		l156.37,136.411L28.199,400.297L26.755,390.913z M464.899,423.84c-6.052,3.492-13.022,5.344-20.145,5.344H67.244
+		c-7.127,0-14.094-1.852-20.142-5.344l-6.328-3.668l159.936-139.379l17.528,15.246c10.514,9.128,23.922,14.16,37.761,14.16
+		c13.89,0,27.32-5.032,37.827-14.16l17.521-15.253L471.228,420.18L464.899,423.84z M485.372,388.572
+		c0,0.803-0.015,1.597-0.116,2.304l-1.386,9.472L329.012,265.409l156.36-136.418V388.572z"
+                                    ></path>
+                                </g>
+                            </svg>
+                            <span class="text-white/90 hover:text-white"
+                                >info@capitalcompass.gr</span
+                            >
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <iframe
-        class="w-1/3 h-screen"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.7056745439972!2d22.974937999999995!3d40.614317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a838ec85aacef5%3A0x17d75d926435da66!2sArgeou%2010%2C%20Thessaloniki%20543%2051!5e0!3m2!1sen!2sgr!4v1695135585514!5m2!1sen!2sgr"
-        width="600"
-        height="450"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div id="map-location" class="w-full md:w-1/3 md:h-screen">
+        <iframe
+            class="md:h-full w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12110.534140349313!2d22.93670338112944!3d40.63796309286925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a839a73a2fee51%3A0x16647f44f8a27766!2sFragkon%2012%2C%20Thessaloniki%20546%2026!5e0!3m2!1sen!2sgr!4v1695631433259!5m2!1sen!2sgr"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 </main>
