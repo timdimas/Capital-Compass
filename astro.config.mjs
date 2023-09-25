@@ -4,6 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://capitalcompass.gr",
+    site: "https://timdimas.github.io/",
+    base: "Capital-Compass",
     integrations: [tailwind()],
 });
